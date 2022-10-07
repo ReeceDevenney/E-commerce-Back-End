@@ -1,0 +1,29 @@
+{
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.20",
+    "sequelize": "^6.24.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "watch": "nodemon server.js",
+    "seed": "node seeds/index.js"
+  },
+  "name": "e-commerce-back-end",
+  "description": "",
+  "version": "1.0.0",
+  "main": "server.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ReeceDevenney/E-commerce-Back-End.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ReeceDevenney/E-commerce-Back-End/issues"
+  },
+  "homepage": "https://github.com/ReeceDevenney/E-commerce-Back-End#readme"
+}
