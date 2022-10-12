@@ -42,7 +42,7 @@ router.get('/:id', (req, res) => {
         through: ProductTag,
       }
     ], 
-    Where: {
+    where: {
       id: req.params.id
     }
   })
