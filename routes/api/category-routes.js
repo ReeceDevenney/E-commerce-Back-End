@@ -44,7 +44,7 @@ router.get('/:id', (req, res) => {
 
 router.post('/', (req, res) => {
   Category.create({
-    category_name: req.body.tag_name
+    category_name: req.body.category_name
   })
     .then(dbCategoryData => res.json(dbCategoryData))
     .catch(err => {
@@ -80,7 +80,7 @@ router.delete('/:id', (req, res) => {
   })
     .then(dbProductData => {
       if (!dbProductData) {
-        res.status(404)({ message: 'Product not found' })
+        res.status(404)({ message: 'Category not found' })
         return
       }
       res.json(dbProductData)
